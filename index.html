@@ -90,7 +90,9 @@
   body.lang-ja .cname,body.lang-zh .cname,body.lang-ko .cname{font-weight:600;}
 
   .desc{font-size:17px;line-height:1.6;color:var(--soft);max-width:640px;font-weight:300;text-wrap:pretty;}
-  body.lang-ja .desc,body.lang-zh .desc,body.lang-ko .desc{font-weight:400;word-break:keep-all;line-break:strict;}
+  body.lang-ja .desc,body.lang-zh .desc,body.lang-ko .desc{font-weight:400;line-break:strict;}
+  body.lang-ko .desc{word-break:keep-all;}
+  body.lang-ja .desc,body.lang-zh .desc{word-break:normal;overflow-wrap:anywhere;}
   .desc .noms{color:var(--soft);font-weight:700;font-style:normal;}
 
   .pricing{flex:0 0 auto;text-align:right;padding-top:2px;border-left:1px solid var(--line);padding-left:26px;min-width:134px;}
