@@ -72,7 +72,7 @@
   .card--sig{background:linear-gradient(180deg,#f0f1e6,#ecebde);}
   .card--sig .num{background:var(--green);}
 
-   .cardhead{all:unset;display:flex;width:100%;cursor:pointer;align-items:stretch;}
+  .cardhead{all:unset;display:flex;width:100%;cursor:pointer;align-items:stretch;}
   .cardhead:focus-visible{outline:2px solid var(--green);outline-offset:-3px;}
 
   .thumb{position:relative;flex:0 0 196px;align-self:stretch;overflow:hidden;background:#dcdacc;}
@@ -83,7 +83,7 @@
 
   .info{flex:1;padding:24px 28px 19px;display:flex;flex-direction:column;min-width:0;}
   .info-top{display:flex;gap:28px;align-items:flex-start;}
-  .titleblock{flex:1;min-width:0;}
+  .titleblock{flex:1;min-width:0;overflow-wrap:anywhere;}
   .tag{display:inline-block;font-family:var(--sans);font-size:13px;letter-spacing:2.5px;text-transform:uppercase;color:var(--green);margin-bottom:8px;font-weight:500;}
   body.lang-ja .tag,body.lang-zh .tag,body.lang-ko .tag{letter-spacing:1.5px;}
   .cname{font-family:var(--serif);font-weight:600;font-size:30px;line-height:1.06;letter-spacing:.2px;margin-bottom:11px;color:var(--ink);}
@@ -160,7 +160,7 @@
   body.lang-ja .ev-eyebrow{letter-spacing:2px;}
   .ev-title{font-family:var(--serif);font-weight:600;font-size:36px;line-height:1.15;letter-spacing:.2px;color:var(--ink);margin-bottom:16px;}
   .ev-lead{font-size:17px;line-height:1.75;color:var(--soft);max-width:740px;margin:0 auto;font-weight:300;text-wrap:pretty;}
-  body.lang-ja .ev-lead{font-weight:400;word-break:keep-all;line-break:strict;}
+  body.lang-ja .ev-lead{font-weight:400;word-break:normal;overflow-wrap:anywhere;line-break:strict;}
   .ev-period{
     display:inline-flex;align-items:center;gap:10px;margin-top:24px;
     padding:11px 24px;border:1px solid var(--green);border-radius:40px;
@@ -200,7 +200,7 @@
   body.lang-ja .ev-tag{letter-spacing:1.5px;}
   .ev-name{font-family:var(--serif);font-weight:600;font-size:29px;line-height:1.08;color:var(--ink);margin-bottom:10px;}
   .ev-desc{font-size:17px;line-height:1.6;color:var(--soft);max-width:620px;font-weight:300;text-wrap:pretty;}
-  body.lang-ja .ev-desc{font-weight:400;word-break:keep-all;line-break:strict;}
+  body.lang-ja .ev-desc{font-weight:400;word-break:normal;overflow-wrap:anywhere;line-break:strict;}
   .ev-price{flex:0 0 auto;text-align:right;padding-top:2px;border-left:1px solid var(--line);padding-left:26px;min-width:158px;}
   .ev-dur{font-family:var(--sans);font-size:14px;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-bottom:9px;}
   body.lang-ja .ev-dur{letter-spacing:.5px;}
@@ -220,7 +220,7 @@
   body.lang-ja .ev-note-title{letter-spacing:1px;}
   .ev-note ul{list-style:none;display:flex;flex-direction:column;gap:9px;}
   .ev-note li{position:relative;padding-left:18px;font-size:16px;line-height:1.55;color:var(--soft);font-weight:300;}
-  body.lang-ja .ev-note li{font-weight:400;word-break:keep-all;}
+  body.lang-ja .ev-note li{font-weight:400;word-break:normal;overflow-wrap:anywhere;}
   .ev-note li::before{content:"";position:absolute;left:2px;top:.62em;width:5px;height:5px;border-radius:50%;background:var(--green-soft);}
   .ev-note li b{color:var(--ink);font-weight:600;}
 
